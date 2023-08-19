@@ -1,0 +1,45 @@
+html{
+  background-color: mediumslateblue;
+}
+button{
+  background-color: darkslateblue;
+  color: white;
+}
+#app{
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "info upgrades"
+    "miner upgrades";
+  grid-template-columns: 70% auto;
+}
+
+#buttons{
+  grid-area: miner;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+#upgrades{
+  display: flex;
+  grid-area: upgrades;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+header{
+  grid-area: title;
+}
+#info{
+  grid-area: info;
+  text-align: center;
+}
+
+#buttons, #upgrades, #info, header{
+  background-color: #b3d4fc;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: darkslateblue;
+  text-align: center;
+}

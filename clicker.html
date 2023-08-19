@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Clicker</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link href="clicker.css" rel="stylesheet">
+  </head>
+  <body>
+    <script src="clicker.js"></script>
+    <div id="app">
+      <header>
+        <p id="title">title</p>
+      </header>
+      <div id="info">
+        <p id="currency">{{ coins }}</p>
+        <p id="amount">$/click +{{ modifier }}</p>
+      </div>
+      <div id="buttons">
+        <button id="mine" v-on:click="mineCrypto">Mine</button>
+      </div>
+      <div id="upgrades">
+        <button id="upgrade1" @click="upgrade(upgrade1name)">{{ upgrade1name }}</button>
+        <button id="upgrade2" @click="upgrade(upgrade2name)">{{ upgrade2name }}</button>
+        <button id="upgrade3" @click="upgrade(upgrade3name)">{{ upgrade3name }}</button>
+        <button id="upgrade4" @click="upgrade(upgrade4name)">{{ upgrade4name }}</button>
+      </div>
+    </div>
+  </body>
+</html>
